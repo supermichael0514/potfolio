@@ -262,12 +262,21 @@ def guide(student):
       });
     }, { threshold: 0.14 });
 
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
     const portrait = document.querySelector('[data-remove-bg]');
     const portraitShell = document.querySelector('[data-portrait-shell]');
     const portraitCanvas = document.querySelector('[data-portrait-canvas]');
 
     const markPortraitFallback = () => {
+      if (!portraitShell || !portraitCanvas) return;
       portraitShell.classList.add('has-fallback');
+      portraitCanvas.hidden = true;
+    };
+
+    const showRawPortrait = () => {
+      if (!portraitShell || !portraitCanvas) return;
+      portraitShell.classList.remove('is-cutout-ready');
       portraitCanvas.hidden = true;
     };
 
@@ -282,68 +291,72 @@ def guide(student):
     };
 
     const removePortraitBackground = () => {
-      if (!portrait.complete || !portrait.naturalWidth) return;
+      if (!portrait || !portraitCanvas || !portraitShell || !portrait.complete || !portrait.naturalWidth) return;
 
-      const maxWidth = 980;
-      const scale = Math.min(1, maxWidth / portrait.naturalWidth);
-      const width = Math.round(portrait.naturalWidth * scale);
-      const height = Math.round(portrait.naturalHeight * scale);
-      const context = portraitCanvas.getContext('2d', { willReadFrequently: true });
+      try {
+        const maxWidth = 720;
+        const scale = Math.min(1, maxWidth / portrait.naturalWidth);
+        const width = Math.round(portrait.naturalWidth * scale);
+        const height = Math.round(portrait.naturalHeight * scale);
+        const context = portraitCanvas.getContext('2d', { willReadFrequently: true });
 
-      portraitCanvas.width = width;
-      portraitCanvas.height = height;
-      context.drawImage(portrait, 0, 0, width, height);
+        portraitCanvas.hidden = false;
+        portraitCanvas.width = width;
+        portraitCanvas.height = height;
+        context.drawImage(portrait, 0, 0, width, height);
 
-      const image = context.getImageData(0, 0, width, height);
-      const pixels = image.data;
-      const total = width * height;
-      const visited = new Uint8Array(total);
-      const queue = [];
+        const image = context.getImageData(0, 0, width, height);
+        const pixels = image.data;
+        const total = width * height;
+        const visited = new Uint8Array(total);
+        const queue = [];
 
-      const enqueue = (x, y) => {
-        if (x < 0 || y < 0 || x >= width || y >= height) return;
-        const index = y * width + x;
-        if (visited[index]) return;
-        const offset = index * 4;
-        if (!isBlueStudioBackground(pixels[offset], pixels[offset + 1], pixels[offset + 2])) return;
-        visited[index] = 1;
-        queue.push(index);
-      };
+        const enqueue = (x, y) => {
+          if (x < 0 || y < 0 || x >= width || y >= height) return;
+          const index = y * width + x;
+          if (visited[index]) return;
+          const offset = index * 4;
+          if (!isBlueStudioBackground(pixels[offset], pixels[offset + 1], pixels[offset + 2])) return;
+          visited[index] = 1;
+          queue.push(index);
+        };
 
-      for (let x = 0; x < width; x += 1) {
-        enqueue(x, 0);
-        enqueue(x, height - 1);
+        for (let x = 0; x < width; x += 1) {
+          enqueue(x, 0);
+          enqueue(x, height - 1);
+        }
+        for (let y = 0; y < height; y += 1) {
+          enqueue(0, y);
+          enqueue(width - 1, y);
+        }
+
+        for (let cursor = 0; cursor < queue.length; cursor += 1) {
+          const index = queue[cursor];
+          const x = index % width;
+          const y = Math.floor(index / width);
+          enqueue(x + 1, y);
+          enqueue(x - 1, y);
+          enqueue(x, y + 1);
+          enqueue(x, y - 1);
+        }
+
+        for (let index = 0; index < total; index += 1) {
+          if (visited[index]) pixels[index * 4 + 3] = 0;
+        }
+
+        context.putImageData(image, 0, 0);
+        portraitShell.classList.add('is-cutout-ready');
+      } catch (error) {
+        console.warn('Portrait background removal failed; showing the original photo instead.', error);
+        showRawPortrait();
       }
-      for (let y = 0; y < height; y += 1) {
-        enqueue(0, y);
-        enqueue(width - 1, y);
-      }
-
-      for (let cursor = 0; cursor < queue.length; cursor += 1) {
-        const index = queue[cursor];
-        const x = index % width;
-        const y = Math.floor(index / width);
-        enqueue(x + 1, y);
-        enqueue(x - 1, y);
-        enqueue(x, y + 1);
-        enqueue(x, y - 1);
-      }
-
-      for (let index = 0; index < total; index += 1) {
-        if (visited[index]) pixels[index * 4 + 3] = 0;
-      }
-
-      context.putImageData(image, 0, 0);
-      portraitShell.classList.add('is-cutout-ready');
     };
 
     if (portrait) {
-      portrait.addEventListener('load', removePortraitBackground, { once: true });
+      portrait.addEventListener('load', () => window.requestAnimationFrame(removePortraitBackground), { once: true });
       portrait.addEventListener('error', markPortraitFallback, { once: true });
-      if (portrait.complete && portrait.naturalWidth) removePortraitBackground();
+      if (portrait.complete && portrait.naturalWidth) window.requestAnimationFrame(removePortraitBackground);
     }
-
-    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
   </script>
 </body>
 </html>

@@ -259,7 +259,7 @@ img { display: block; max-width: 100%; }
     linear-gradient(180deg, rgba(31, 78, 126, 0.16), transparent 72%);
   filter: blur(26px);
 }
-.portrait-source { display: none; }
+.portrait-source,
 .portrait-canvas {
   position: relative;
   z-index: 1;
@@ -269,13 +269,25 @@ img { display: block; max-width: 100%; }
   object-fit: contain;
   object-position: bottom center;
   filter: saturate(1.04) contrast(1.05) drop-shadow(-26px 22px 36px rgba(0, 0, 0, 0.38));
-  opacity: 0;
-  transform: translateY(14px);
+  transform: translateY(0);
   transition: opacity 260ms ease, transform 360ms ease;
+}
+.portrait-source {
+  opacity: 1;
+}
+.portrait-canvas {
+  position: absolute;
+  inset: auto 0 0;
+  margin-inline: auto;
+  opacity: 0;
+  pointer-events: none;
 }
 .portrait-shell.is-cutout-ready .portrait-canvas {
   opacity: 1;
   transform: translateY(0);
+}
+.portrait-shell.is-cutout-ready .portrait-source {
+  opacity: 0;
 }
 .portrait-shell.has-fallback {
   min-height: 500px;
@@ -284,6 +296,10 @@ img { display: block; max-width: 100%; }
   background:
     radial-gradient(circle at 50% 24%, rgba(96, 165, 250, 0.26), transparent 31%),
     linear-gradient(180deg, rgba(13, 34, 60, 0.82), rgba(6, 17, 31, 0.98));
+}
+.portrait-shell.has-fallback .portrait-source,
+.portrait-shell.has-fallback .portrait-canvas {
+  display: none;
 }
 .portrait-shell.has-fallback::after {
   content: "请将 profile_photo.png 放在项目根目录\A 背景将自动去除并显示在此位置";
@@ -544,7 +560,7 @@ h2 { margin: 0; font-size: clamp(1.55rem, 3vw, 2.15rem); line-height: 1.18; lett
   .hero-visual { min-height: auto; }
   .portrait-shell { position: relative; right: auto; width: min(390px, 92vw); min-height: 420px; margin: 0 auto; }
   .floating-logo { width: 70px; right: 6%; top: 16px; }
-  .portrait-canvas { max-height: 460px; }
+  .portrait-source, .portrait-canvas { max-height: 460px; }
   .about-intro { grid-template-columns: 1fr; }
   .about-facts,
   .timeline,
