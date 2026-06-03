@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="曹维雨，A-Level 计算机科学课程负责人、国际学校计算机教师、学生项目与竞赛导师。融合工程实践、国际课程与科技项目经验，帮助学生建立面向未来的计算机科学能力。" />
-  <title>曹维雨｜A-Level 计算机科学课程负责人</title>
+  <meta name="description" content="曹维雨，A-Level Computer Science Curriculum Coordinator，计算机教师、国际课程建设者、项目与竞赛导师。" />
+  <title>曹维雨｜Computer Science Educator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet" />
@@ -13,12 +13,7 @@
 <body>
   <header class="site-header" data-header>
     <a class="brand" href="#home" aria-label="曹维雨首页">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 64 64" role="img">
-          <path d="M32 4 56 18v28L32 60 8 46V18L32 4Z" />
-          <path d="M20 42V22l12 9 12-9v20" />
-        </svg>
-      </span>
+      <img src="assets/logo.svg" alt="" class="brand-logo" />
       <span>曹维雨</span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
@@ -27,239 +22,169 @@
     </button>
     <nav id="site-nav" class="site-nav" data-nav>
       <a href="#home">首页</a>
-      <a href="#about">关于</a>
-      <a href="#experience">经历</a>
-      <a href="#expertise">专长</a>
-      <a href="#achievements">成果</a>
+      <a href="#about">关于我</a>
+      <a href="#outcomes">学生成果</a>
+      <a href="#journey">成长路径</a>
       <a href="#contact">联系</a>
     </nav>
   </header>
 
   <main>
     <section id="home" class="hero section-dark">
-      <div class="hero-code" aria-hidden="true">
-        <pre>class Educator:
-    focus = "Computer Science"
-    method = "Engineering Mindset"
-
-def guide(student):
-    return student.think_computationally()</pre>
-      </div>
-      <div class="binary-field" aria-hidden="true">0101&nbsp;&nbsp;1010&nbsp;&nbsp;CS&nbsp;&nbsp;{ }&nbsp;&nbsp;1100&nbsp;&nbsp;0011</div>
+      <div class="code-ribbon" aria-hidden="true">function learn(problem) { return design(solution); }</div>
+      <div class="binary-column" aria-hidden="true">0101 1010 1100 0011 CS AI DB</div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow">International CS Education · Curriculum Leadership</span>
+          <p class="eyebrow">A-Level Computer Science Curriculum Coordinator</p>
           <h1>曹维雨</h1>
-          <p class="hero-title">A-Level 计算机科学课程负责人</p>
-          <p class="hero-subtitle">计算机科学教师 · 国际课程建设者 · 学生项目与竞赛导师</p>
-          <p class="hero-description">融合国际课程、工程实践与科技项目经验，帮助学生从掌握代码走向理解系统、解决问题与创造作品。</p>
+          <h2>培养能够解决真实问题的未来技术人才</h2>
+          <p class="role">计算机教师 · 国际课程建设者 · 项目与竞赛导师</p>
+          <p class="hero-description">拥有工程、科技产业与国际教育的跨界背景。从自动化与电机工程出发，曾参与 VR、机器人与智能硬件项目管理；如今专注于 A-Level、IGCSE 与 AP Computer Science 课程建设与教学，帮助学生在考试成绩、竞赛项目、学术研究与未来专业发展之间建立连接。</p>
           <div class="tag-row" aria-label="专业标签">
-            <span>A-Level Computer Science</span>
-            <span>IGCSE / AP Computing</span>
-            <span>EPQ Mentorship</span>
-            <span>ACSL / USACO / CCC</span>
-            <span>Engineering Mindset</span>
+            <span>A-Level</span><span>IGCSE</span><span>AP Computer Science</span><span>EPQ</span><span>ACSL</span><span>USACO</span><span>Engineering Mindset</span>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#expertise">了解我的教育方法 <span aria-hidden="true">&lt;/&gt;</span></a>
-            <a class="btn btn-outline" href="#contact">联系合作</a>
+            <a class="btn btn-primary" href="#about">了解我的教育理念</a>
+            <a class="btn btn-ghost" href="#outcomes">查看学生成果</a>
           </div>
         </div>
         <div class="hero-visual reveal" style="--delay: 120ms">
-          <div class="portrait-shell" data-portrait-shell>
-            <img
-              class="portrait-image"
-              src="profile_photo_cutout.png"
-              alt="曹维雨个人形象照"
-              data-portrait-image
-              data-fallback-src="profile_photo.png"
-              decoding="async"
-              fetchpriority="high"
-            />
-            <div class="portrait-glow" aria-hidden="true"></div>
-          </div>
-          <div class="floating-logo" aria-hidden="true">
-            <svg viewBox="0 0 64 64">
-              <path d="M32 4 56 18v28L32 60 8 46V18L32 4Z" />
-              <path d="M20 42V22l12 9 12-9v20" />
-            </svg>
+          <div class="portrait-frame">
+            <div class="terminal-card" aria-hidden="true"><span>cs@future:~</span><strong>build --students</strong></div>
+            <img class="portrait-image" src="profile_photo_cutout.png" alt="曹维雨个人照片" />
+            <div class="photo-orbit" aria-hidden="true"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about-panel section-light">
-      <div class="container about-grid">
-        <div class="about-intro reveal">
-          <div class="line-icon" aria-hidden="true">⌘</div>
-          <div>
-            <h2>关于我的教育实践</h2>
-            <p>我是一名国际学校 A-Level 计算机科学课程协调员与计算机教师，拥有电机工程硕士和自动化本科背景。过去的科技行业经历涵盖 VR、机器人、智能硬件与项目管理；如今，我将工程思维、计算思维和国际课程经验结合起来，支持学生在课程学习、研究项目、编程竞赛与大学申请准备中持续成长。</p>
-          </div>
-        </div>
-        <div class="about-facts reveal" style="--delay: 120ms">
-          <article>
-            <span class="fact-icon">◇</span>
-            <h3>教育背景</h3>
-            <p>电机工程硕士<br />自动化本科</p>
-          </article>
-          <article>
-            <span class="fact-icon">▣</span>
-            <h3>教学经验</h3>
-            <p>9 年工作经验<br />国际学校计算机教学与课程建设</p>
-          </article>
-          <article>
-            <span class="fact-icon">◎</span>
-            <h3>当前身份</h3>
-            <p>A-Level 计算机课程协调员<br />清澜山学校高中部</p>
-          </article>
-          <article>
-            <span class="fact-icon">✦</span>
-            <h3>国际教育</h3>
-            <p>EPQ · ACSL · USACO · CCC<br />iPGCE · ADE · PMP</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="experience section-dark">
+    <section id="about" class="section about">
       <div class="container">
         <div class="section-heading reveal">
-          <div>
-            <span class="section-kicker">Professional Experience</span>
-            <h2>专业经历</h2>
-          </div>
-          <p>从科技行业项目实践，到国际计算机科学课程建设。</p>
+          <p class="section-kicker">02 · About Me</p>
+          <h2>关于我</h2>
+          <p>我是一名计算机教师，也是一名工程背景出身的教育工作者。相比传统的教学路径，我的职业经历横跨工程、科技产业与国际教育，这使我能够将真实世界的技术实践带入课堂。</p>
         </div>
-        <div class="timeline reveal" style="--delay: 120ms">
-          <article class="timeline-card">
-            <span class="timeline-dot"></span>
-            <p class="date">2017.4 – 2020.5</p>
-            <h3>科技项目管理与技术战略</h3>
-            <p class="org">VR · 机器人 · 智能硬件</p>
-            <p>参与教育类 VR、智能硬件、机器人相关项目管理与技术规划，积累工程系统、科研协作、产品逻辑和跨机构合作经验。</p>
+        <div class="bento-grid">
+          <article class="bento-card reveal large">
+            <img src="assets/icons/academic.svg" alt="" class="card-icon" />
+            <h3>Academic</h3>
+            <ul>
+              <li>北京理工大学：自动化专业 学士</li>
+              <li>国立台湾大学：电机工程学 硕士</li>
+              <li>University of Strathclyde：iPGCE 国际教师教育课程</li>
+            </ul>
           </article>
-          <article class="timeline-card">
-            <span class="timeline-dot"></span>
-            <p class="date">2020.5 – 2023</p>
-            <h3>国际高中计算机教师</h3>
-            <p class="org">广东碧桂园学校国际高中部</p>
-            <p>执教英式高中计算机课程，参与 IGCSE 项目事务，指导 ACSL、EPQ、牛剑模拟面试等学生发展项目。</p>
+          <article class="bento-card reveal" style="--delay: 80ms">
+            <img src="assets/icons/industry.svg" alt="" class="card-icon" />
+            <h3>Industry</h3>
+            <ul>
+              <li>VR 项目研究与管理</li>
+              <li>智能硬件产品开发</li>
+              <li>机器人科研项目管理</li>
+              <li>技术战略研究与规划</li>
+            </ul>
+            <p class="note">这些经历让我理解技术如何真正解决现实问题，并将这些经验带回课堂。</p>
           </article>
-          <article class="timeline-card current">
-            <span class="timeline-dot"></span>
-            <p class="date">2023.8 – 至今</p>
-            <h3>A-Level 计算机课程协调员</h3>
-            <p class="org">清澜山学校高中部</p>
-            <p>参与 A-Level 整体学术政策制定，负责学科教学进度、个性化培养方案与课程建设，执教 A-Level、IGCSE、AP 计算机课程。</p>
+          <article class="bento-card reveal" style="--delay: 140ms">
+            <img src="assets/icons/education.svg" alt="" class="card-icon" />
+            <h3>Education</h3>
+            <ul>
+              <li>A-Level Computer Science</li>
+              <li>IGCSE Computer Science</li>
+              <li>AP Computer Science</li>
+              <li>课程体系建设</li>
+              <li>学术政策制定</li>
+              <li>学生个性化培养方案设计</li>
+            </ul>
           </article>
-          <article class="timeline-card">
-            <span class="timeline-dot"></span>
-            <p class="date">持续进行</p>
-            <h3>学生项目与竞赛导师</h3>
-            <p class="org">EPQ · ACSL · USACO · CCC</p>
-            <p>支持学生开展研究型学习、算法训练、技术项目与大学申请相关作品建设，关注从课程学习到独立探索的成长。</p>
+          <article class="bento-card reveal wide" style="--delay: 200ms">
+            <img src="assets/icons/credentials.svg" alt="" class="card-icon" />
+            <h3>Credentials</h3>
+            <div class="credential-list">
+              <span>Apple Distinguished Educator</span><span>Apple Teacher</span><span>A-Level Computer Science Examiner</span><span>高中信息技术教师资格证</span><span>iPGCE</span><span>PMP</span><span>国家发明专利 × 2</span><span>PCT 国际专利申请</span>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="expertise" class="expertise section-light">
+    <section id="outcomes" class="section outcomes section-dark">
       <div class="container">
-        <div class="section-heading light reveal">
-          <div>
-            <span class="section-kicker">&lt;/&gt; Expertise</span>
-            <h2>专业能力</h2>
-          </div>
+        <div class="section-heading reveal emphasis-heading">
+          <p class="section-kicker">03 · Student Outcomes</p>
+          <h2>学生成果</h2>
+          <p>我相信，优秀的计算机教育不仅体现在考试成绩，更体现在学生解决问题的能力、项目成果与长期发展。</p>
         </div>
-        <div class="expertise-grid">
-          <article class="expertise-item reveal"><span>⌁</span><h3>A-Level 计算机课程建设</h3><p>课程规划 · 教学进度 · Assessment · 个性化培养</p></article>
-          <article class="expertise-item reveal"><span>&lt;/&gt;</span><h3>国际计算机课程教学</h3><p>A-Level · IGCSE · AP Computing</p></article>
-          <article class="expertise-item reveal"><span>⧉</span><h3>编程与算法思维</h3><p>Python · 数据结构 · 算法 · 计算思维</p></article>
-          <article class="expertise-item reveal"><span>▤</span><h3>EPQ 与研究型项目指导</h3><p>选题设计 · 技术路径 · 学术表达</p></article>
-          <article class="expertise-item reveal"><span>♙</span><h3>竞赛路径指导</h3><p>ACSL · USACO · CCC · 长期训练规划</p></article>
-          <article class="expertise-item reveal"><span>⚙</span><h3>科技项目与工程实践</h3><p>VR · 机器人 · 智能硬件 · 项目管理</p></article>
+        <div class="outcome-grid">
+          <article class="outcome-card reveal featured"><img src="assets/icons/academic.svg" alt="" class="card-icon" /><span class="number">01</span><h3>学术成果</h3><ul><li>指导学生获得学校首个 EPQ A*</li><li>多名学生在 A-Level Computer Science 中获得优异成绩</li><li>指导学生完成独立科研与学术项目</li></ul></article>
+          <article class="outcome-card reveal"><img src="assets/icons/competition.svg" alt="" class="card-icon" /><span class="number">02</span><h3>竞赛成果</h3><ul><li>ACSL 团队金奖</li><li>ACSL 个人金奖</li><li>CCC 竞赛指导</li><li>USACO 入门与提升指导</li></ul></article>
+          <article class="outcome-card reveal"><img src="assets/icons/project.svg" alt="" class="card-icon" /><span class="number">03</span><h3>项目成果</h3><ul><li>学生编程项目开发</li><li>人工智能与数据分析探索项目</li><li>科技创新与研究型学习项目</li></ul></article>
+          <article class="outcome-card reveal"><img src="assets/icons/admissions.svg" alt="" class="card-icon" /><span class="number">04</span><h3>升学支持</h3><ul><li>牛津、剑桥计算机专业模拟面试</li><li>计算机相关专业规划</li><li>文书与学术背景提升建议</li></ul></article>
         </div>
       </div>
     </section>
 
-    <section id="achievements" class="achievements section-dark">
+    <section id="journey" class="section journey">
       <div class="container">
         <div class="section-heading reveal">
-          <div>
-            <span class="section-kicker">Selected Achievements</span>
-            <h2>代表成果</h2>
-          </div>
+          <p class="section-kicker">04 · Journey</p>
+          <h2>我的成长路径</h2>
         </div>
-        <div class="achievement-grid">
-          <article class="achievement-card reveal"><span class="achievement-icon">✧</span><div><h3>Apple Distinguished Educator</h3><p>苹果杰出教育工作者 / Apple 认证教师，关注教育科技、课堂创新与数字化学习体验设计。</p></div></article>
-          <article class="achievement-card reveal"><span class="achievement-icon">▱</span><div><h3>A-Level 计算机课程协调员</h3><p>参与学术政策、教学进度、个性化培养方案与计算机课程体系建设。</p></div></article>
-          <article class="achievement-card reveal"><span class="achievement-icon">◌</span><div><h3>学生项目与竞赛指导</h3><p>指导 EPQ、ACSL、USACO、CCC 等研究型学习、算法训练与技术项目。</p></div></article>
-          <article class="achievement-card reveal"><span class="achievement-icon">⌬</span><div><h3>工程背景与专业认证</h3><p>电机工程硕士、PMP、国家专利，具备 VR、机器人与智能硬件项目经验。</p></div></article>
-        </div>
+        <ol class="timeline">
+          <li class="reveal"><span>中学时期</span><p>对科技与工程产生兴趣</p></li>
+          <li class="reveal"><span>北京理工大学</span><p>自动化专业</p></li>
+          <li class="reveal"><span>国立台湾大学</span><p>电机工程硕士</p></li>
+          <li class="reveal"><span>科技产业</span><p>VR · 智能硬件 · 机器人</p></li>
+          <li class="reveal"><span>广东碧桂园学校</span><p>A-Level 计算机教师</p></li>
+          <li class="reveal"><span>清澜山学校</span><p>A-Level 计算机课程协调员</p></li>
+          <li class="reveal"><span>未来</span><p>培养更多具有创造力与系统思维的技术人才</p></li>
+        </ol>
       </div>
     </section>
 
-    <section id="contact" class="contact section-light">
+    <section id="contact" class="section contact section-dark">
       <div class="container contact-grid">
-        <div class="contact-brand reveal">
-          <span class="brand-mark large" aria-hidden="true">
-            <svg viewBox="0 0 64 64">
-              <path d="M32 4 56 18v28L32 60 8 46V18L32 4Z" />
-              <path d="M20 42V22l12 9 12-9v20" />
-            </svg>
-          </span>
-          <h2>曹维雨</h2>
-          <p>A-Level 计算机科学课程负责人<br />Computer Science Educator</p>
-          <div class="socials" aria-label="社交链接">
-            <a href="mailto:supermichael0514@163.com" aria-label="发送邮件">✉</a>
-            <a href="#contact" aria-label="微信联系">微</a>
-            <a href="#contact" aria-label="LinkedIn">in</a>
+        <div class="contact-copy reveal">
+          <p class="section-kicker">05 · Contact</p>
+          <h2>Let's Build Future Problem Solvers.</h2>
+          <p>如果您希望交流 A-Level Computer Science、国际课程建设、学生竞赛培养、EPQ 项目指导或教育科技合作，欢迎联系。</p>
+        </div>
+        <div class="contact-panel reveal" style="--delay: 120ms">
+          <a href="mailto:supermichael0514@163.com"><img src="assets/icons/mail.svg" alt="" />supermichael0514@163.com</a>
+          <a href="tel:13466630529"><img src="assets/icons/phone.svg" alt="" />13466630529</a>
+          <div class="friend-links" aria-label="友情链接">
+            <a href="#" aria-label="LinkedIn"><img src="assets/icons/link.svg" alt="" />LinkedIn</a>
+            <a href="#" aria-label="GitHub"><img src="assets/icons/code.svg" alt="" />GitHub</a>
+            <a href="#" aria-label="个人博客"><img src="assets/icons/link.svg" alt="" />个人博客</a>
+            <a href="#" aria-label="学校主页"><img src="assets/icons/link.svg" alt="" />学校主页</a>
           </div>
         </div>
-        <div class="connect-card reveal" style="--delay: 120ms">
-          <h2>欢迎交流</h2>
-          <p>如果你希望探讨国际学校计算机课程建设、学生项目指导、竞赛路径规划、教育科技实践或校际合作，欢迎与我联系。</p>
-          <a class="btn btn-primary" href="mailto:supermichael0514@163.com">联系我</a>
-        </div>
-        <address class="contact-details reveal" style="--delay: 180ms">
-          <p><span>邮箱</span><a href="mailto:supermichael0514@163.com">supermichael0514@163.com</a></p>
-          <p><span>地点</span>中国 · 上海 / 大湾区教育生态</p>
-          <p><span>合作方向</span>国际课程建设 · 学生项目 · 教育科技 · 教师发展</p>
-        </address>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer section-dark">
-    <p>© 2026 曹维雨. All rights reserved.</p>
-    <p>以计算思维连接教育与未来 <span aria-hidden="true">&lt;/&gt;</span></p>
+  <footer class="site-footer">
+    <img src="assets/logo.svg" alt="" />
+    <p>© 2026 曹维雨 · Computer Science Education</p>
   </footer>
 
   <script>
     const header = document.querySelector('[data-header]');
     const nav = document.querySelector('[data-nav]');
     const toggle = document.querySelector('[data-nav-toggle]');
-
-    const updateHeader = () => {
-      header.classList.toggle('is-scrolled', window.scrollY > 12);
-    };
+    const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 10);
     updateHeader();
     window.addEventListener('scroll', updateHeader, { passive: true });
-
     toggle.addEventListener('click', () => {
       const expanded = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!expanded));
       nav.classList.toggle('is-open');
     });
-
-    nav.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        toggle.setAttribute('aria-expanded', 'false');
-        nav.classList.remove('is-open');
-      });
-    });
-
+    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      toggle.setAttribute('aria-expanded', 'false');
+      nav.classList.remove('is-open');
+    }));
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -267,35 +192,8 @@ def guide(student):
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.14 });
-
+    }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-
-    const portrait = document.querySelector('[data-portrait-image]');
-    const portraitShell = document.querySelector('[data-portrait-shell]');
-
-    if (portrait && portraitShell) {
-      portrait.addEventListener('load', () => {
-        portraitShell.classList.add('is-portrait-ready');
-      });
-
-      portrait.addEventListener('error', () => {
-        const fallbackSrc = portrait.dataset.fallbackSrc;
-        const currentFile = portrait.currentSrc || portrait.src;
-        const shouldTryFallback = fallbackSrc && !currentFile.endsWith(fallbackSrc);
-
-        if (shouldTryFallback) {
-          portrait.src = fallbackSrc;
-          return;
-        }
-
-        portraitShell.classList.add('has-fallback');
-      });
-
-      if (portrait.complete && portrait.naturalWidth) {
-        portraitShell.classList.add('is-portrait-ready');
-      }
-    }
   </script>
 </body>
 </html>
