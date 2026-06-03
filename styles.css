@@ -94,7 +94,7 @@ li { list-style: none; }
 .hero-visual { position: relative; min-height: 668px; display: flex; align-items: flex-end; justify-content: flex-end; align-self: stretch; }
 .hero-mark { position: absolute; z-index: 3; right: 8px; top: 46px; width: 92px; height: 92px; opacity: 0.92; filter: drop-shadow(0 0 30px rgba(47, 140, 255, 0.42)); }
 .portrait-image { position: absolute; z-index: 2; right: clamp(-130px, -7vw, -58px); bottom: -2px; width: min(640px, 52vw); max-height: 760px; object-fit: contain; object-position: bottom right; filter: saturate(1.02) contrast(1.06) drop-shadow(-22px 36px 64px rgba(0,0,0,.48)); }
-.hero-visual::before { content: ""; position: absolute; right: -18%; bottom: 0; width: 118%; height: 82%; background: radial-gradient(circle at 62% 24%, rgba(14,165,233,.25), transparent 43%), linear-gradient(90deg, transparent, rgba(2, 6, 17, .50)); pointer-events: none; }
+.hero-visual::before { content: ""; position: absolute; z-index: 1; right: -12%; bottom: 2%; width: 96%; height: 76%; border-radius: 999px; background: radial-gradient(ellipse at 58% 32%, rgba(14,165,233,.28) 0%, rgba(14,165,233,.14) 34%, transparent 72%); filter: blur(10px); pointer-events: none; }
 
 
 .about, .journey { color: var(--dark-text); background: var(--light); }
