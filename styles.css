@@ -78,7 +78,7 @@ li { list-style: none; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 0.88fr) minmax(500px, 0.95fr); gap: 18px; align-items: end; min-height: 668px; }
 .hero-copy { padding: 88px 0 92px; }
 .eyebrow, .section-kicker { margin: 0 0 18px; color: var(--cyan); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
-.hero h1 { margin: 0; font-size: clamp(5.1rem, 10vw, 8.4rem); line-height: 0.86; letter-spacing: -0.09em; text-shadow: 0 18px 50px rgba(0,0,0,.34); }
+.hero h1 { margin: 0; font-size: clamp(4.4rem, 8vw, 7rem); line-height: 0.86; letter-spacing: -0.09em; text-shadow: 0 18px 50px rgba(0,0,0,.34); }
 .hero h2 { max-width: 740px; margin: 28px 0 0; font-size: clamp(2rem, 3.7vw, 3.9rem); line-height: 1.05; letter-spacing: -0.06em; }
 .role { margin: 16px 0 0; color: rgba(238, 246, 255, 0.9); font-size: clamp(1rem, 1.7vw, 1.24rem); font-weight: 800; }
 .hero-description { max-width: 650px; margin: 24px 0 0; color: rgba(226, 232, 240, 0.84); font-size: 1.05rem; font-weight: 650; }
@@ -94,7 +94,7 @@ li { list-style: none; }
 .hero-visual { position: relative; min-height: 668px; display: flex; align-items: flex-end; justify-content: flex-end; align-self: stretch; }
 .hero-mark { position: absolute; z-index: 3; right: 8px; top: 46px; width: 92px; height: 92px; opacity: 0.92; filter: drop-shadow(0 0 30px rgba(47, 140, 255, 0.42)); }
 .portrait-image { position: absolute; z-index: 2; right: clamp(-130px, -7vw, -58px); bottom: -2px; width: min(640px, 52vw); max-height: 760px; object-fit: contain; object-position: bottom right; filter: saturate(1.02) contrast(1.06) drop-shadow(-22px 36px 64px rgba(0,0,0,.48)); }
-.hero-visual::before { content: ""; position: absolute; z-index: 1; right: -12%; bottom: 2%; width: 96%; height: 76%; border-radius: 999px; background: radial-gradient(ellipse at 58% 32%, rgba(14,165,233,.28) 0%, rgba(14,165,233,.14) 34%, transparent 72%); filter: blur(10px); pointer-events: none; }
+.hero-visual::before { content: ""; position: absolute; right: -18%; bottom: 0; width: 118%; height: 82%; background: radial-gradient(circle at 62% 24%, rgba(14,165,233,.25), transparent 43%), linear-gradient(90deg, transparent, rgba(2, 6, 17, .50)); pointer-events: none; }
 
 
 .about, .journey { color: var(--dark-text); background: var(--light); }
@@ -136,14 +136,14 @@ li { list-style: none; }
 
 .contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 26px; align-items: stretch; }
 .contact-copy h2 { max-width: 760px; margin: 0; font-size: clamp(3rem, 7vw, 6.5rem); line-height: 0.95; letter-spacing: -0.075em; }
-.contact-copy p:not(.section-kicker) { max-width: 690px; color: rgba(226,232,240,.78); font-size: 1.08rem; }
-.contact-panel { padding: 18px; border: 1px solid rgba(125,211,252,.18); border-radius: var(--radius-xl); background: rgba(8, 16, 30, 0.66); box-shadow: var(--shadow); backdrop-filter: blur(18px); }
+.contact-copy p:not(.section-kicker) { max-width: 690px; color: var(dark-muted); font-size: 1.08rem; }
+.contact-panel { padding: 18px; border: 1px solid rgba(15, 23, 42, 0.08); border-radius: var(--radius-xl); background: rgba(255,255,255, .82); box-shadow: var(--shadow); backdrop-filter: blur(18px); }
 .contact-banner { width: 100%; aspect-ratio: 1200 / 420; object-fit: cover; border-radius: 26px; border: 1px solid rgba(125,211,252,.18); background: #071120; }
 .contact-links { display: grid; grid-template-columns: 1fr; margin-top: 16px; }
 .contact-links a, .friend-links a { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 4px; border-bottom: 1px solid rgba(255,255,255,.08); font-weight: 800; }
 .contact-panel img:not(.contact-banner) { width: 32px; height: 32px; }
 .friend-links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 18px; margin-top: 12px; }
-.friend-links a { min-height: 46px; color: rgba(238,246,255,.78); font-size: .94rem; }
+.friend-links a { min-height: 46px; color: var(--dark-muted); font-size: .94rem; }
 
 
 .site-footer { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 28px 20px; color: rgba(238,246,255,.62); background: #03050a; border-top: 1px solid rgba(255,255,255,.08); }
