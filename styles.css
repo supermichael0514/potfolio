@@ -116,12 +116,11 @@ li { list-style: none; }
 
 .outcomes { padding-top: clamp(96px, 11vw, 156px); }
 .emphasis-heading { max-width: 910px; }
-.emphasis-heading h2 { font-size: clamp(3rem, 8vw, 7rem); }
 .outcome-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .outcome-card { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 44px; grid-template-areas: "title icon" "content content"; align-items: start; column-gap: 14px; min-height: 250px; padding: 26px 22px; border: 1px solid rgba(125,211,252,.16); border-radius: var(--radius-lg); background: linear-gradient(180deg, rgba(14, 27, 48, .92), rgba(7, 13, 24, .84)); box-shadow: 0 22px 80px rgba(0,0,0,.28); overflow: hidden; }
 .outcome-card::after { content: ""; position: absolute; z-index: 0; inset: auto -24% -34% 26%; height: 150px; background: radial-gradient(circle, rgba(47,140,255,.18), transparent 68%); }
 .outcome-card > * { position: relative; z-index: 1; }
-.outcome-card .metric { grid-area: title; align-self: center; min-width: 0; display: block; margin: 0; color: var(--cyan); font-size: clamp(1.25rem, 1.9vw, 1.95rem); line-height: 1; font-weight: 850; letter-spacing: -0.055em; }
+.outcome-card .metric { grid-area: title; align-self: center; min-width: 0; display: block; margin: 0; color: var(--cyan); font-size: clamp(1.5rem, 2.1vw, 2.4rem); line-height: 1; font-weight: 850; letter-spacing: -0.055em; }
 .outcome-card p { grid-area: content; position: relative; z-index: 1; margin: 20px 0 0; color: rgba(226, 232, 240, 0.76); font-size: .94rem; }
 
 .timeline { position: relative; display: grid; gap: 14px; margin-top: 18px; }
@@ -136,7 +135,6 @@ li { list-style: none; }
 
 .contact { background: radial-gradient(circle at 20% 10%, rgba(47, 140, 255, .09), transparent 34%), var(--light); }
 .contact-heading { margin-bottom: 32px; }
-.contact-heading h2 { font-size: clamp(3.2rem, 7vw, 5.6rem); }
 .contact-panel { border: 1px solid rgba(15, 23, 42, 0.08); border-radius: var(--radius-xl); background: rgba(255,255,255, .86); box-shadow: 0 26px 80px rgba(15, 23, 42, .12); backdrop-filter: blur(18px); }
 .contact-layout { display: grid; grid-template-columns: minmax(0, 1.48fr) minmax(320px, .92fr); gap: clamp(24px, 4vw, 52px); align-items: stretch; padding: clamp(22px, 3vw, 32px); }
 .contact-banner { width: 100%; min-height: 360px; height: 100%; object-fit: cover; border-radius: 26px; border: 1px solid rgba(125,211,252,.18); background: #071120; box-shadow: 0 22px 58px rgba(15, 23, 42, .16); }
