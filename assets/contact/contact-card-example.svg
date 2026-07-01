@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+  <title id="title">联系我联络卡片示例图</title>
+  <desc id="desc">中心为 supermichael0514，周围连接 Instagram、个人网站、微信、邮箱、GitHub 与 LinkedIn 的蓝色科技风联络卡片。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1e3a8a" flood-opacity=".14"/></filter>
+    <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#2f8cff"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8b5cf6"/><stop offset=".45" stop-color="#ec4899"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+  </defs>
+  <rect width="920" height="420" fill="#fff"/>
+  <g stroke="#2f7cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+    <path d="M276 185h-82"/><path d="M644 185h78"/><path d="M366 136v-38h-92"/><path d="M548 136v-38h90"/><path d="M368 248v35h-104"/><path d="M556 248v35h100"/>
+    <circle cx="194" cy="185" r="4" fill="#2f7cff"/><circle cx="276" cy="185" r="4" fill="#2f7cff"/><circle cx="722" cy="185" r="4" fill="#2f7cff"/><circle cx="644" cy="185" r="4" fill="#2f7cff"/>
+    <circle cx="366" cy="98" r="4" fill="#2f7cff"/><circle cx="548" cy="98" r="4" fill="#2f7cff"/><circle cx="368" cy="283" r="4" fill="#2f7cff"/><circle cx="556" cy="283" r="4" fill="#2f7cff"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M304 148h312l36 36v52l-36 36h-123l-35 22h-38l-35-22h-81l-36-36v-52z" fill="#fbfdff" stroke="#2f7cff" stroke-width="2"/>
+    <path d="M322 160h276l31 31v38l-31 31h-113l-33 21h-27l-33-21h-70l-31-31v-38z" fill="none" stroke="#9cc3ff" stroke-width="1.5"/>
+    <text x="460" y="190" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#60a5fa" letter-spacing="1.5">ONE ID · MANY CONNECTIONS</text>
+    <text x="460" y="236" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800" fill="#101827">supermichael0514</text>
+    <circle cx="460" cy="264" r="8" fill="url(#blue)"/><path d="M444 292c2-14 10-21 16-21s14 7 16 21z" fill="url(#blue)"/>
+  </g>
+  <g filter="url(#shadow)" font-family="Inter, Arial, sans-serif">
+    <g transform="translate(105 152)"><rect width="170" height="58" rx="12" fill="#fff" stroke="#d7e3f5"/><rect x="18" y="16" width="30" height="30" rx="8" fill="#22c55e"/><circle cx="30" cy="31" r="8" fill="#fff"/><circle cx="40" cy="34" r="7" fill="#fff"/><text x="64" y="28" font-size="15" font-weight="800" fill="#111827">微信</text><text x="64" y="46" font-size="12" fill="#334155">supermichael0514</text></g>
+    <g transform="translate(238 56)"><rect width="220" height="62" rx="12" fill="#fff" stroke="#d7e3f5"/><rect x="18" y="14" width="34" height="34" rx="8" fill="url(#pink)"/><circle cx="35" cy="31" r="10" stroke="#fff" stroke-width="3" fill="none"/><circle cx="46" cy="20" r="3" fill="#fff"/><text x="70" y="29" font-size="15" font-weight="800" fill="#111827">Instagram</text><text x="70" y="48" font-size="12" fill="#334155">@supermichael0514</text></g>
+    <g transform="translate(540 56)"><rect width="230" height="62" rx="12" fill="#fff" stroke="#d7e3f5"/><circle cx="36" cy="31" r="18" fill="none" stroke="#2563eb" stroke-width="4"/><path d="M18 31h36M36 13c-10 12-10 24 0 36M36 13c10 12 10 24 0 36" stroke="#2563eb" stroke-width="2" fill="none"/><text x="70" y="29" font-size="15" font-weight="800" fill="#111827">个人网站</text><text x="70" y="48" font-size="12" fill="#334155">www.supermichael0514.com</text></g>
+    <g transform="translate(722 152)"><rect width="170" height="58" rx="12" fill="#fff" stroke="#d7e3f5"/><path d="M28 22h30v22h-30zM28 22l15 13 15-13" stroke="#2563eb" stroke-width="3" fill="none"/><text x="78" y="28" font-size="15" font-weight="800" fill="#111827">邮箱</text><text x="78" y="46" font-size="11" fill="#334155">supermichael0514@163.com</text></g>
+    <g transform="translate(210 290)"><rect width="240" height="58" rx="12" fill="#fff" stroke="#d7e3f5"/><circle cx="35" cy="29" r="18" fill="#111"/><text x="70" y="28" font-size="15" font-weight="800" fill="#111827">GitHub</text><text x="70" y="46" font-size="12" fill="#334155">github.com/supermichael0514</text></g>
+    <g transform="translate(550 290)"><rect width="240" height="58" rx="12" fill="#fff" stroke="#d7e3f5"/><rect x="18" y="14" width="34" height="34" rx="5" fill="#0a66c2"/><text x="29" y="40" font-size="27" font-family="Arial" font-weight="800" fill="#fff">in</text><text x="70" y="28" font-size="15" font-weight="800" fill="#111827">LinkedIn</text><text x="70" y="46" font-size="12" fill="#334155">linkedin.com/in/supermichael0514</text></g>
+  </g>
+</svg>
