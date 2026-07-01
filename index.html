@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -121,26 +122,58 @@
           <h2>联系我</h2>
           <p>如果您希望交流课程建设、学生培养、学术项目或教育科技合作，欢迎与我联系。</p>
         </div>
-        <div class="contact-panel contact-layout reveal" style="--delay: 120ms">
-          <img class="contact-banner" src="assets/bg/contact-banner-placeholder.png" />
-          <div class="contact-side">
-            <div class="contact-links" aria-label="联系方式">
-              <a class="contact-link-card" href="mailto:supermichael0514@163.com">
-                <span class="contact-icon"><img src="assets/icons/mail.png" alt="" /></span>
-                <span><strong>邮箱</strong><span>supermichael0514@163.com</span></span>
-              </a>
-              <a class="contact-link-card" href="tel:13466630529">
-                <span class="contact-icon"><img src="assets/icons/phone.png" alt="" /></span>
-                <span><strong>电话</strong><span>+86 13466630529</span></span>
-              </a>
-            </div>
-            <div class="friend-links" aria-label="友情链接">
-              <a href="#" aria-label="LinkedIn"><span class="friend-icon"><img src="assets/icons/link.png" alt="" /></span><strong>LinkedIn</strong><span>↗</span></a>
-              <a href="#" aria-label="GitHub"><span class="friend-icon"><img src="assets/icons/code.png" alt="" /></span><strong>GitHub</strong><span>↗</span></a>
-              <a href="#" aria-label="学习网站"><span class="friend-icon"><img src="assets/icons/study.png" alt="" /></span><strong>学习网站</strong><span>↗</span></a>
-              <a href="#" aria-label="学校主页"><span class="friend-icon"><img src="assets/icons/school.png" alt="" /></span><strong>学校主页</strong><span>↗</span></a>
-            </div>
+        <div class="contact-showcase reveal" style="--delay: 120ms">
+          <div class="contact-main-card" aria-label="联络卡片图片区">
+            <img class="contact-card-image" src="assets/contact/contact-card-example.svg" alt="联系我联络卡片" />
           </div>
+          <aside class="friend-panel" aria-label="友情链接">
+            <h3><span class="friend-title-icon" aria-hidden="true">⌁</span>友情链接<span class="sparkle" aria-hidden="true">✦</span></h3>
+            <div class="friend-link-list">
+              <a class="friend-link-item" href="https://github.com/your-username" target="_blank" rel="noopener">
+                <span class="friend-icon"><img src="assets/icons/friends/github-example.svg" alt="" /></span>
+                <strong>GitHub</strong>
+                <span class="friend-arrow" aria-hidden="true">›</span>
+              </a>
+              <a class="friend-link-item" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">
+                <span class="friend-icon"><img src="assets/icons/friends/linkedin-example.svg" alt="" /></span>
+                <strong>LinkedIn</strong>
+                <span class="friend-arrow" aria-hidden="true">›</span>
+              </a>
+              <a class="friend-link-item" href="https://example.com/learning" target="_blank" rel="noopener">
+                <span class="friend-icon"><img src="assets/icons/friends/learning-site-example.svg" alt="" /></span>
+                <strong>我的学习网站</strong>
+                <span class="friend-arrow" aria-hidden="true">›</span>
+              </a>
+              <a class="friend-link-item" href="https://example.com/school" target="_blank" rel="noopener">
+                <span class="friend-icon"><img src="assets/icons/friends/school-example.svg" alt="" /></span>
+                <strong>学校主页</strong>
+                <span class="friend-arrow" aria-hidden="true">›</span>
+              </a>
+              <a class="friend-link-item" href="https://code.org/" target="_blank" rel="noopener">
+                <span class="friend-icon"><img src="assets/icons/friends/code-org-example.svg" alt="" /></span>
+                <strong>Code.org</strong>
+                <span class="friend-arrow" aria-hidden="true">›</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="contact-bottom-grid reveal" style="--delay: 180ms">
+          <div class="cooperation-card">
+            <span class="target-icon" aria-hidden="true">◎</span>
+            <h3>合作方向<span class="sparkle" aria-hidden="true">✦</span></h3>
+            <ul class="cooperation-tags" aria-label="合作方向">
+              <li>📖 课程设计</li>
+              <li>🎓 升学指导</li>
+              <li>⚗ 科研项目</li>
+              <li>▣ AI 教育</li>
+              <li>🏆 竞赛辅导</li>
+            </ul>
+          </div>
+          <figure class="quote-card">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>教育的本质是点燃火焰，而非填满容器。</blockquote>
+            <figcaption>—— 苏格拉底</figcaption>
+          </figure>
         </div>
       </div>
     </section>
